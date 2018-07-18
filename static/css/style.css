@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+
+
+body {
+    font-family: 'Source Serif Pro', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.sans-serif {
+    font-family: 'Roboto', sans-serif;
+}
+
+.table-like {
+    display: table;
+    width: 100%;
+}
+
+.table--row {
+    display: table-row;
+    text-align: center;
+}
+
+.table--cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cell-40 {
+    width: 40%;
+}
+
+.cell-45 {
+    width: 40%;
+}
+
+.nav-link, .btn, .heading {
+    font-family: 'Roboto', sans-serif;
+}
+
+.parallax {
+    color: white;
+    text-shadow: 2px 2px rgba(0,0,0,.18);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.padding {
+    padding: 2px;
+}
+
+.gallery {
+    outline: 3px solid white;
+}
+
+.border-top {
+    box-shadow: 0 -4px 0 #fff;
+}
+
+.flex-landscape {
+    flex:1.5;
+}
+
+.flex-portrait {
+    flex:0.6667;
+}
+
+.flex-2-landscape {
+    flex:0.75;
+}
+
+.post-info-left {
+    padding-left: 15px;
+    float: left;
+}
+
+.post-info-right {
+    display: block;
+    padding-right: 15px;
+    float: right;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-landscape, .flex-2-landscape, .flex-portrait, .flex-column3 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .table--row, .table-like {
+        display:block;
+    }
+
+    .table--cell {
+        display: inline-block;
+        width:100%;
+    }
+
+    .cell-40, .cell-45 {
+        width:100%;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.flex-column {
+    width: 45%;
+}
+.flex-column3 {
+    width: 30%;
+    max-width: 380px;
+}
+
+.flex-column3 img {
+    width: 100%;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #343a40!important;
+    font-color: white!important;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.row-no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
