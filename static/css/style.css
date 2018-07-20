@@ -75,8 +75,12 @@ p {
     flex:0.6667;
 }
 
-.flex-2-landscape {
+.flex-2-landscape, .flex-portrait-iphone {
     flex:0.75;
+}
+
+.flex-landscape-iphone {
+    flex:1.3333;
 }
 
 .post-info-left {
@@ -128,7 +132,7 @@ p {
 
 .navbar .dropdown-menu a:hover {
     background-color: #343a40!important;
-    font-color: white!important;
+    color: white!important;
 }
 
 .no-padding {
