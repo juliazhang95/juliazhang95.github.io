@@ -16,9 +16,6 @@
     <!-- Bootstrap core CSS -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Material Design Bootstrap -->
-    <link href="/static/css/mdb.min.css" rel="stylesheet">
-
     <!-- Lightbox -->
     <link href="/static/css/lightbox.css" rel="stylesheet">
 
@@ -32,46 +29,23 @@
     <header>
 
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar bg-dark">
-    <div class="container-fluid justify-content-center align-items-center">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent-4">
-            <ul class="navbar-nav">
-
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/index.html" class="nav-link font-bold" aria-expanded="false"> HOME </a>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/about/" class="nav-link font-bold" aria-expanded="false"> ABOUT </a>
-                </li>
-                <li class="nav-item dropdown ml-4 mb-0">
-                    <a href="/destinations/" class="nav-link font-bold" aria-expanded="false">DESTINATIONS</a>
-                </li>
-                <li class="nav-item ml-4 mb-0 dropdown" dropdown>
-                    <a class="nav-link font-bold dropdown-toggle" data-toggle="dropdown">CATEGORIES</a>
-                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item sans-serif font-bold dark-grey-text" href="/posts/category/Food/"><strong>FOOD</strong></a>
-                      <a class="dropdown-item sans-serif font-bold dark-grey-text" href="/posts/category/Travel/"><strong>TRAVEL</strong></a>
-                    </div>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/posts/all/" class="nav-link font-bold" aria-expanded="false">LIST</a>
-                </li>
-                <!--
-                <li class="nav-item ml-4 mb-0">
-                    <a href="https://drive.google.com/open?id=1XpxTi7nEz_vEpyQIhhwux07iIWo&usp=sharing" class="nav-link font-bold" aria-expanded="false" target="new">FOOD MAP</a>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a class="nav-link font-bold" href="/posts/archives/">ARCHIVES</a>
-                </li>
-                -->
-            </ul>
+        <nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 title">
+                <h1>julia's blog</h1>
+            </div>
+            <div class="col-md-7 links align-middle">
+                <a href="/index.html">home</a>
+                <a href="/about/">about</a>
+                <a href="/destinations/">destinations</a>
+                <a href="/posts/category/travel/">travel</a>
+                <a href="/posts/category/food/">food</a>
+                <a href="/posts/all/">list</a>
+            </div>
         </div>
     </div>
+
 </nav>
         <!-- /.Navbar -->
 
@@ -79,283 +53,49 @@
     <!-- /.Navigation -->
 
 
-<body class="homepage-v2 hidden-sn animated">
+<body>
 
     
-    <!-- Main Layout -->
-    <main class="pt-0">
 
-        <!--Intro-->
-        <section>
-            <div class="container mt-5 pt-3" style="min-height:85vh; min-height:calc(100vh - 140px - 64px);">
-                <!--Excerpt-->
-
-                <hr>
-
-                <!--Blog-->
-                <div class="row mt-5 pt-3">
-
-                    <!--Main listing-->
-                    <div class="col-lg-12 col-12 mt-1">
-
-                        <section class="section extra-margins pb-3 text-center text-lg-left">
-
-                            
-
-                            
-
-<!--Grid row-->
-<div class="table-like">
-
-    <!--Grid column-->
-    <div class="col-lg-5 mb-4 table--cell cell-45">
-        <!--Featured image-->
-            <a href="/posts/20180717_antiqvvm/"><img src="/posts/20180717_antiqvvm/outdoors.jpg" class="img-fluid z-depth-1 hm-white-slight">
-            <a>
-                <div class="mask"></div>
-            </a>
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-7 mb-4 table--cell">
-        <div>
-        <!--Grid row-->
+    <div class="col-lg-10 ml-auto mr-auto">
         <div class="row">
-
-            <!--Grid column-->
-            <div class="col-sm-12 text-md-left text-sm-center">
-                <div style="display:inline; text-align:left; float:left;">
-                    <p class="font-small font-bold mb-1 spacing heading" style="display:inline;">
-                    <strong><a class="dark-grey-text" href="/posts/country/Portugal/">PORTUGAL</a></strong>
-                </p></div>
-                <div style="display:inline; text-align:right; float:right;">
-                <p class="font-small"><em>July 17, 2018</em></p>
-                </div>
-            </div>
-
-        </div>
-        <!--Grid row-->
-
-        <h4 class="mb-3 mt-0">
-            <strong>
-                <a class="dark-grey-text" href="/posts/20180717_antiqvvm/">Antiqvvm in Porto, Portugal</a>
-            </strong>
-        </h4>
-
-        <div class="text-justify">
-        <p class="dark-grey-text"> <p>We discovered <a href="http://antiqvvm.pt" target="new">Antiqvvm</a> in Porto by chance, as we were exploring the gardens next to it before we got hungry at lunch time. It happened to be Labour Day in Porto, so a lot of places were closed, but...
-        </p>
-        </div>
-
-        <a class="btn btn-mdb btn-rounded btn-sm" href="/posts/20180717_antiqvvm/">Read more</a>
-    </div>
-    </div>
-    <!--Grid column-->
-
+            
+                <div class="text-center col-sm-6 col-md-4 mb-5">
+    <a href="/posts/20180717_antiqvvm/"><img src="/posts/20180717_antiqvvm/outdoors.jpg" class="img-fluid z-depth-1 mb-3 link"></a>
+    <a href="/posts/category/Food/"><strong>Food</strong></a> • <a href="/posts/country/Portugal/"><strong>Portugal</strong></a>
+    <h4 class="mb-2 mt-2"><a href="/posts/20180717_antiqvvm/">Antiqvvm in Porto, Portugal</a></h4>
+    July 17, 2018
 </div>
-<!--Grid row-->
-
-<hr class="mb-5 mt-5">
-
-                            
-
-                            
-
-<!--Grid row-->
-<div class="table-like">
-
-    <!--Grid column-->
-    <div class="col-lg-5 mb-4 table--cell cell-45">
-        <!--Featured image-->
-            <a href="/posts/20180716_porto/"><img src="/posts/20180716_porto/porto12.jpg" class="img-fluid z-depth-1 hm-white-slight">
-            <a>
-                <div class="mask"></div>
-            </a>
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-7 mb-4 table--cell">
-        <div>
-        <!--Grid row-->
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-sm-12 text-md-left text-sm-center">
-                <div style="display:inline; text-align:left; float:left;">
-                    <p class="font-small font-bold mb-1 spacing heading" style="display:inline;">
-                    <strong><a class="dark-grey-text" href="/posts/country/Portugal/">PORTUGAL</a></strong>
-                </p></div>
-                <div style="display:inline; text-align:right; float:right;">
-                <p class="font-small"><em>July 16, 2018</em></p>
-                </div>
-            </div>
-
-        </div>
-        <!--Grid row-->
-
-        <h4 class="mb-3 mt-0">
-            <strong>
-                <a class="dark-grey-text" href="/posts/20180716_porto/">An Unexpected Labour Day in Porto</a>
-            </strong>
-        </h4>
-
-        <div class="text-justify">
-        <p class="dark-grey-text"> <p>Our final destination in Portugal before heading to Italy was in Porto! We arrived in Porto by plane, and took a cab to the airport. Something that we've noticed during our stay in Portugal and taking Ubers and cabs is that people drive...
-        </p>
-        </div>
-
-        <a class="btn btn-mdb btn-rounded btn-sm" href="/posts/20180716_porto/">Read more</a>
-    </div>
-    </div>
-    <!--Grid column-->
-
+            
+                <div class="text-center col-sm-6 col-md-4 mb-5">
+    <a href="/posts/20180716_porto/"><img src="/posts/20180716_porto/porto12.jpg" class="img-fluid z-depth-1 mb-3 link"></a>
+    <a href="/posts/category/Travel/"><strong>Travel</strong></a> • <a href="/posts/country/Portugal/"><strong>Portugal</strong></a>
+    <h4 class="mb-2 mt-2"><a href="/posts/20180716_porto/">An Unexpected Labour Day in Porto</a></h4>
+    July 16, 2018
 </div>
-<!--Grid row-->
-
-<hr class="mb-5 mt-5">
-
-                            
-
-                            
-
-<!--Grid row-->
-<div class="table-like">
-
-    <!--Grid column-->
-    <div class="col-lg-5 mb-4 table--cell cell-45">
-        <!--Featured image-->
-            <a href="/posts/20180715_algarve/"><img src="/posts/20180715_algarve/algarve17.jpg" class="img-fluid z-depth-1 hm-white-slight">
-            <a>
-                <div class="mask"></div>
-            </a>
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-7 mb-4 table--cell">
-        <div>
-        <!--Grid row-->
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-sm-12 text-md-left text-sm-center">
-                <div style="display:inline; text-align:left; float:left;">
-                    <p class="font-small font-bold mb-1 spacing heading" style="display:inline;">
-                    <strong><a class="dark-grey-text" href="/posts/country/Portugal/">PORTUGAL</a></strong>
-                </p></div>
-                <div style="display:inline; text-align:right; float:right;">
-                <p class="font-small"><em>July 15, 2018</em></p>
-                </div>
-            </div>
-
-        </div>
-        <!--Grid row-->
-
-        <h4 class="mb-3 mt-0">
-            <strong>
-                <a class="dark-grey-text" href="/posts/20180715_algarve/">Exploring the Algarve</a>
-            </strong>
-        </h4>
-
-        <div class="text-justify">
-        <p class="dark-grey-text"> <p>We took a 3 hour train from Lisbon to Faro in the evening of our 3rd day in Europe, and arrived in Faro in the evening. Unfortunately, as we were walking to our Airbnb from the train station, I tripped and hurt one of my ankles. Fortunately,...
-        </p>
-        </div>
-
-        <a class="btn btn-mdb btn-rounded btn-sm" href="/posts/20180715_algarve/">Read more</a>
-    </div>
-    </div>
-    <!--Grid column-->
-
+            
+                <div class="text-center col-sm-6 col-md-4 mb-5">
+    <a href="/posts/20180715_algarve/"><img src="/posts/20180715_algarve/algarve17.jpg" class="img-fluid z-depth-1 mb-3 link"></a>
+    <a href="/posts/category/Travel/"><strong>Travel</strong></a> • <a href="/posts/country/Portugal/"><strong>Portugal</strong></a>
+    <h4 class="mb-2 mt-2"><a href="/posts/20180715_algarve/">Exploring the Algarve</a></h4>
+    July 15, 2018
 </div>
-<!--Grid row-->
-
-<hr class="mb-5 mt-5">
-
-                            
-
-                            
-
-<!--Grid row-->
-<div class="table-like">
-
-    <!--Grid column-->
-    <div class="col-lg-5 mb-4 table--cell cell-45">
-        <!--Featured image-->
-            <a href="/posts/20180713_lisbon_sintra/"><img src="/posts/20180713_lisbon_sintra/lisbon7.jpg" class="img-fluid z-depth-1 hm-white-slight">
-            <a>
-                <div class="mask"></div>
-            </a>
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-7 mb-4 table--cell">
-        <div>
-        <!--Grid row-->
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-sm-12 text-md-left text-sm-center">
-                <div style="display:inline; text-align:left; float:left;">
-                    <p class="font-small font-bold mb-1 spacing heading" style="display:inline;">
-                    <strong><a class="dark-grey-text" href="/posts/country/Portugal/">PORTUGAL</a></strong>
-                </p></div>
-                <div style="display:inline; text-align:right; float:right;">
-                <p class="font-small"><em>July 13, 2018</em></p>
-                </div>
-            </div>
-
-        </div>
-        <!--Grid row-->
-
-        <h4 class="mb-3 mt-0">
-            <strong>
-                <a class="dark-grey-text" href="/posts/20180713_lisbon_sintra/">Walking Up Hills in Lisbon and Sintra</a>
-            </strong>
-        </h4>
-
-        <div class="text-justify">
-        <p class="dark-grey-text"> <p>After I graduated, I planned a 45 day around Europe with 4-6 of my friends, depending on the day, visiting 5 countries. We left Canada on April 25, and returned on June 9. Our first stop was in Portugal, where we visited Lisbon and Sintra, the...
-        </p>
-        </div>
-
-        <a class="btn btn-mdb btn-rounded btn-sm" href="/posts/20180713_lisbon_sintra/">Read more</a>
-    </div>
-    </div>
-    <!--Grid column-->
-
+            
+                <div class="text-center col-sm-6 col-md-4 mb-5">
+    <a href="/posts/20180713_lisbon_sintra/"><img src="/posts/20180713_lisbon_sintra/lisbon7.jpg" class="img-fluid z-depth-1 mb-3 link"></a>
+    <a href="/posts/category/Travel/"><strong>Travel</strong></a> • <a href="/posts/country/Portugal/"><strong>Portugal</strong></a>
+    <h4 class="mb-2 mt-2"><a href="/posts/20180713_lisbon_sintra/">Walking Up Hills in Lisbon and Sintra</a></h4>
+    July 13, 2018
 </div>
-<!--Grid row-->
-
-<hr class="mb-5 mt-5">
-
-                            
-
-                        </section>
-
-                    </div>
-                    <!--Main listing-->
-
-
-                </div>
-                <!--Blog-->
-
-            </div>
-
-        </section>
-        <!--/Intro-->
-
-    </main>
-    <!-- /.Main Layout -->
+            
+        </div>
+    </div>
 
 
 
 
     <!--Footer-->
-    <footer class="page-footer stylish-color-dark mt-5">
+    <footer class="page-footer mt-5">
 
     <!--Footer Links-->
     <div class="container">
@@ -363,11 +103,11 @@
         <!-- Footer links -->
         <div class="row justify-content-center mt-3 pb-3">
 
-            <div class="text-center" style="margin-bottom:10px;">
-                <a href="http://juliazhang.com" target="new"><i class="fa fa-globe" style="margin-right:5px;"></i></a>
-                <a href="https://www.instagram.com/jzjourneys/" target="new"><i class="fa fa-instagram" style="margin-right:5px"></i></a>
-                <a href="https://www.flickr.com/photos/157459585@N03/" target="new"><i class="fa fa-flickr" style="margin-right:5px"></i></a>
-                <a href="https://500px.com/juliazhang95" target="new"><i class="fa fa-500px" style="margin-right:5px"></i></a>
+            <div class="text-center">
+                <a href="http://juliazhang.com" target="new" class="dark-grey-text"><i class="fa fa-globe" style="margin-right:5px;"></i></a>
+                <a href="https://www.instagram.com/jzjourneys/" target="new" class="dark-grey-text"><i class="fa fa-instagram" style="margin-right:5px"></i></a>
+                <a href="https://www.flickr.com/photos/157459585@N03/" target="new" class="dark-grey-text"><i class="fa fa-flickr" style="margin-right:5px"></i></a>
+                <a href="https://500px.com/juliazhang95" target="new" class="dark-grey-text"><i class="fa fa-500px" style="margin-right:5px"></i></a>
 
                 <br/>
                 <i class="fa fa-heart"></i> Julia.
@@ -393,11 +133,12 @@
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="/static/js/mdb.min.js"></script>
-
     <!-- Lightbox -->
     <script type="text/javascript" src="/static/js/lightbox.js"></script>
+
+    
+
+    
 
     <script type="text/javascript">
         /* WOW.js init */

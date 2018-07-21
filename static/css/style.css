@@ -1,5 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
+/* Navbar */
+nav {
+    background-color: #fff;
+    padding-top: 75px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav .title {
+    text-align: left!important;
+}
+
+nav .links {
+    text-align: right!important;
+}
+
+nav div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav a {
+    padding-right: 10px;
+    color: #212529;
+}
+
+nav a:last-of-type {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    nav .title, nav .links {
+        text-align: center!important;
+    }
+}
+
+
+/* Main layout */
+
+::selection {
+    background: lightgray;
+}
 
 body {
     font-family: 'Source Serif Pro', serif;
@@ -7,15 +59,75 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h4 a {
+    color: #212529!important;
+}
+
+a {
+    color: slategray;
+    transition: .4s ease;
+}
+
+a:hover {
+    color: #828899!important;
+    text-decoration: none;
 }
 
 p {
     text-align: justify;
 }
 
+.white-text {
+    color: #fff;
+}
+
+.dark-grey-text {
+    color: #212529;
+}
+
 .sans-serif {
     font-family: 'Roboto', sans-serif;
 }
+
+.btn-light {
+    font-family: 'Source Serif Pro', serif!important;
+    transition: .5s ease;
+}
+
+.btn-light:hover {
+    cursor: pointer;
+}
+
+.row-no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.z-depth-1 {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px rgba(0,0,0,.18);
+}
+
+/* image links */
+
+.link {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+
+/* table display stuff*/
 
 .table-like {
     display: table;
@@ -32,6 +144,8 @@ p {
     vertical-align: middle;
 }
 
+/* about page */
+
 .cell-40 {
     width: 40%;
 }
@@ -40,9 +154,7 @@ p {
     width: 40%;
 }
 
-.nav-link, .btn, .heading {
-    font-family: 'Roboto', sans-serif;
-}
+/* for posts */
 
 .parallax {
     color: white;
@@ -55,16 +167,8 @@ p {
     position: relative;
 }
 
-.padding {
-    padding: 2px;
-}
-
 .gallery {
     outline: 3px solid white;
-}
-
-.border-top {
-    box-shadow: 0 -4px 0 #fff;
 }
 
 .flex-landscape {
@@ -83,19 +187,9 @@ p {
     flex:1.3333;
 }
 
-.post-info-left {
-    padding-left: 15px;
-    float: left;
-}
-
-.post-info-right {
-    display: block;
-    padding-right: 15px;
-    float: right;
-}
-
 @media screen and (max-width: 800px) {
-    .flex-landscape, .flex-2-landscape, .flex-portrait, .flex-column3 {
+    .flex-landscape, .flex-2-landscape, .flex-portrait, .flex-column3,
+    .flex-portrait-iphone, .flex-landscape-iphone {
         flex: 100%;
         max-width: 100%;
     }
@@ -121,6 +215,7 @@ p {
 .flex-column {
     width: 45%;
 }
+
 .flex-column3 {
     width: 30%;
     max-width: 380px;
@@ -128,18 +223,4 @@ p {
 
 .flex-column3 img {
     width: 100%;
-}
-
-.navbar .dropdown-menu a:hover {
-    background-color: #343a40!important;
-    color: white!important;
-}
-
-.no-padding {
-    padding: 0;
-}
-
-.row-no-margin {
-    margin-left: 0;
-    margin-right: 0;
 }

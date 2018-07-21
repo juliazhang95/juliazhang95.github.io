@@ -16,9 +16,6 @@
     <!-- Bootstrap core CSS -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Material Design Bootstrap -->
-    <link href="/static/css/mdb.min.css" rel="stylesheet">
-
     <!-- Lightbox -->
     <link href="/static/css/lightbox.css" rel="stylesheet">
 
@@ -32,46 +29,23 @@
     <header>
 
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar bg-dark">
-    <div class="container-fluid justify-content-center align-items-center">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent-4">
-            <ul class="navbar-nav">
-
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/index.html" class="nav-link font-bold" aria-expanded="false"> HOME </a>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/about/" class="nav-link font-bold" aria-expanded="false"> ABOUT </a>
-                </li>
-                <li class="nav-item dropdown ml-4 mb-0">
-                    <a href="/destinations/" class="nav-link font-bold" aria-expanded="false">DESTINATIONS</a>
-                </li>
-                <li class="nav-item ml-4 mb-0 dropdown" dropdown>
-                    <a class="nav-link font-bold dropdown-toggle" data-toggle="dropdown">CATEGORIES</a>
-                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item sans-serif font-bold dark-grey-text" href="/posts/category/Food/"><strong>FOOD</strong></a>
-                      <a class="dropdown-item sans-serif font-bold dark-grey-text" href="/posts/category/Travel/"><strong>TRAVEL</strong></a>
-                    </div>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/posts/all/" class="nav-link font-bold" aria-expanded="false">LIST</a>
-                </li>
-                <!--
-                <li class="nav-item ml-4 mb-0">
-                    <a href="https://drive.google.com/open?id=1XpxTi7nEz_vEpyQIhhwux07iIWo&usp=sharing" class="nav-link font-bold" aria-expanded="false" target="new">FOOD MAP</a>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a class="nav-link font-bold" href="/posts/archives/">ARCHIVES</a>
-                </li>
-                -->
-            </ul>
+        <nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 title">
+                <h1>julia's blog</h1>
+            </div>
+            <div class="col-md-7 links align-middle">
+                <a href="/index.html">home</a>
+                <a href="/about/">about</a>
+                <a href="/destinations/">destinations</a>
+                <a href="/posts/category/travel/">travel</a>
+                <a href="/posts/category/food/">food</a>
+                <a href="/posts/all/">list</a>
+            </div>
         </div>
     </div>
+
 </nav>
         <!-- /.Navbar -->
 
@@ -79,7 +53,7 @@
     <!-- /.Navigation -->
 
 
-<body class="homepage-v2 hidden-sn animated">
+<body>
 
     
 
@@ -90,25 +64,25 @@
 
     <div class="row justify-content-center">
     <!--Main listing-->
-    <div class="col-lg-8 col-12 mt-1">
+    <div class="col-lg-8 col-md-10">
 
-        <div id="map-container" style="width:100%; margin-top:50px;">
-          <div id="travel-map" style="position: relative; width:100%; height:auto; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+        <div id="zoom-buttons" class="row justify-content-center mb-3">
+            <button type="button" class="btn btn-light mr-2" id="world-zoom">World</button>
+            <button type="button" class="btn btn-light mr-2" id="europe-zoom">Europe</button>
+            <button type="button" class="btn btn-light mr-2" id="na-zoom">North America</button>
+            <button type="button" class="btn btn-light mr-2" id="sa-zoom">South America</button>
+            <button type="button" class="btn btn-light mr-2" id="africa-zoom">Africa</button>
+            <button type="button" class="btn btn-light mr-2" id="asia-zoom">Asia</button>
+            <button type="button" class="btn btn-light" id="oceania-zoom">Oceania</button>
         </div>
-        <div id="zoom-buttons" class="row justify-content-center mb-4">
-            <button type="button" class="btn btn-mdb" id="world-zoom">World</button>
-            <button type="button" class="btn btn-mdb" id="europe-zoom">Europe</button>
-            <button type="button" class="btn btn-mdb" id="na-zoom">North America</button>
-            <button type="button" class="btn btn-mdb" id="sa-zoom">South America</button>
-            <button type="button" class="btn btn-mdb" id="africa-zoom">Africa</button>
-            <button type="button" class="btn btn-mdb" id="asia-zoom">Asia</button>
-            <button type="button" class="btn btn-mdb" id="oceania-zoom">Oceania</button>
+        <div id="map-container" class="mb-3" style="width:100%;">
+          <div id="travel-map" style="position: relative; width:100%; height:auto; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
         </div>
 
         <div>
             
                 <div class="mb-4">
-                <h2>Europe</h2>
+                <h3>Europe</h3>
                 <ul>
                 
                 <li>
@@ -138,6 +112,10 @@
                 <li>
                     <strong><a href="/posts/country/Italy/">Italy</a>:</strong>
                     
+                    <a href="/posts/country/Italy/city/Florence/">Florence</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Pisa/">Pisa</a>, 
+                    
                     <a href="/posts/country/Italy/city/Milan/">Milan</a>, 
                     
                     <a href="/posts/country/Italy/city/Cinque%20Terre/">Cinque Terre</a>
@@ -148,7 +126,7 @@
                 </div>
             
                 <div class="mb-4">
-                <h2>South America</h2>
+                <h3>South America</h3>
                 <ul>
                 
                 <li>
@@ -199,7 +177,7 @@
         },
         fills: {
             defaultFill: "#e4e4e4",
-            beenTo: "#45526E"
+            beenTo: "#708090"
         },
         geographyConfig: {
             highlightFillColor: "#4f5e7e",
@@ -286,7 +264,7 @@
 
 
     <!--Footer-->
-    <footer class="page-footer stylish-color-dark mt-5">
+    <footer class="page-footer mt-5">
 
     <!--Footer Links-->
     <div class="container">
@@ -294,11 +272,11 @@
         <!-- Footer links -->
         <div class="row justify-content-center mt-3 pb-3">
 
-            <div class="text-center" style="margin-bottom:10px;">
-                <a href="http://juliazhang.com" target="new"><i class="fa fa-globe" style="margin-right:5px;"></i></a>
-                <a href="https://www.instagram.com/jzjourneys/" target="new"><i class="fa fa-instagram" style="margin-right:5px"></i></a>
-                <a href="https://www.flickr.com/photos/157459585@N03/" target="new"><i class="fa fa-flickr" style="margin-right:5px"></i></a>
-                <a href="https://500px.com/juliazhang95" target="new"><i class="fa fa-500px" style="margin-right:5px"></i></a>
+            <div class="text-center">
+                <a href="http://juliazhang.com" target="new" class="dark-grey-text"><i class="fa fa-globe" style="margin-right:5px;"></i></a>
+                <a href="https://www.instagram.com/jzjourneys/" target="new" class="dark-grey-text"><i class="fa fa-instagram" style="margin-right:5px"></i></a>
+                <a href="https://www.flickr.com/photos/157459585@N03/" target="new" class="dark-grey-text"><i class="fa fa-flickr" style="margin-right:5px"></i></a>
+                <a href="https://500px.com/juliazhang95" target="new" class="dark-grey-text"><i class="fa fa-500px" style="margin-right:5px"></i></a>
 
                 <br/>
                 <i class="fa fa-heart"></i> Julia.
@@ -324,11 +302,12 @@
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="/static/js/mdb.min.js"></script>
-
     <!-- Lightbox -->
     <script type="text/javascript" src="/static/js/lightbox.js"></script>
+
+    
+
+    
 
     <script type="text/javascript">
         /* WOW.js init */

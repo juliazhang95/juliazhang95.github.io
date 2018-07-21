@@ -16,9 +16,6 @@
     <!-- Bootstrap core CSS -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Material Design Bootstrap -->
-    <link href="/static/css/mdb.min.css" rel="stylesheet">
-
     <!-- Lightbox -->
     <link href="/static/css/lightbox.css" rel="stylesheet">
 
@@ -32,46 +29,23 @@
     <header>
 
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar bg-dark">
-    <div class="container-fluid justify-content-center align-items-center">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent-4">
-            <ul class="navbar-nav">
-
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/index.html" class="nav-link font-bold" aria-expanded="false"> HOME </a>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/about/" class="nav-link font-bold" aria-expanded="false"> ABOUT </a>
-                </li>
-                <li class="nav-item dropdown ml-4 mb-0">
-                    <a href="/destinations/" class="nav-link font-bold" aria-expanded="false">DESTINATIONS</a>
-                </li>
-                <li class="nav-item ml-4 mb-0 dropdown" dropdown>
-                    <a class="nav-link font-bold dropdown-toggle" data-toggle="dropdown">CATEGORIES</a>
-                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item sans-serif font-bold dark-grey-text" href="/posts/category/Food/"><strong>FOOD</strong></a>
-                      <a class="dropdown-item sans-serif font-bold dark-grey-text" href="/posts/category/Travel/"><strong>TRAVEL</strong></a>
-                    </div>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a href="/posts/all/" class="nav-link font-bold" aria-expanded="false">LIST</a>
-                </li>
-                <!--
-                <li class="nav-item ml-4 mb-0">
-                    <a href="https://drive.google.com/open?id=1XpxTi7nEz_vEpyQIhhwux07iIWo&usp=sharing" class="nav-link font-bold" aria-expanded="false" target="new">FOOD MAP</a>
-                </li>
-                <li class="nav-item ml-4 mb-0">
-                    <a class="nav-link font-bold" href="/posts/archives/">ARCHIVES</a>
-                </li>
-                -->
-            </ul>
+        <nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 title">
+                <h1>julia's blog</h1>
+            </div>
+            <div class="col-md-7 links align-middle">
+                <a href="/index.html">home</a>
+                <a href="/about/">about</a>
+                <a href="/destinations/">destinations</a>
+                <a href="/posts/category/travel/">travel</a>
+                <a href="/posts/category/food/">food</a>
+                <a href="/posts/all/">list</a>
+            </div>
         </div>
     </div>
+
 </nav>
         <!-- /.Navbar -->
 
@@ -79,7 +53,7 @@
     <!-- /.Navigation -->
 
 
-<body class="homepage-v2 hidden-sn animated">
+<body>
 
     
 
@@ -96,51 +70,26 @@
         }
     </style>
 
-    <div class="parallax">
-        <!-- Title Info -->
-        <div class="text-center" style="position:absolute; width:100vw; margin-top:60vh;">
-            <div class="col-md-12 col-xl-12 d-flex justify-content-center">
-                <div class="row"><h1><strong>Astrid &amp; Gastón in Lima, Peru</strong></h1></div>
-            </div>
-            <div class="col-md-12 col-xl-12 d-flex justify-content-center">
-                <div style="float:left;">
-                    <i class="fa fa-map-marker"></i><strong>
-                    
-                    
-                    <a class="white-text" href="/posts/country/Peru/city/Lima/">Lima</a>
-                     in <a class="white-text" href="/posts/country/Peru/">Peru</a>, South America</strong></div><br/>
-            </div>
-            <div class="col-md-12 col-xl-12 d-flex justify-content-center">
-                <div style="float:left; margin-right:20px;"><i class="fa fa-calendar"></i><strong> December 29, 2017</strong></div><br/>
-                <div style="float:left;"><i class="fa fa-folder"></i><strong> <a class="white-text" href="/posts/category/Food/">Food</a></strong></div>
-            </div>
-        </div>
-    </div>
+    <div class="parallax"></div>
 
     <!--Main Layout-->
     <main>
 
-        <div class="container-fluid mt-5 pt-3">
+        <div class="col-md-12 text-center mt-5 pt-3">
+            <h2>Astrid &amp; Gastón in Lima, Peru</h2>
+            <i class="fa fa-map-marker"></i><strong>
+            
+            
+            <a class="dark-grey-text" href="/posts/country/Peru/city/Lima/">Lima</a>
+             in <a class="dark-grey-text" href="/posts/country/Peru/">Peru</a>, South America</strong><br/>
+            <i class="fa fa-calendar"></i><strong class="mr-2"> December 29, 2017</strong>
+            <i class="fa fa-folder"></i><strong> <a class="dark-grey-text" href="/posts/category/Food/">Food</a> </strong>
+        </div>
 
-            <!--Grid row-->
+        <div class="container mt-5">
             <div class="row">
 
-                <!--Grid column-->
-                <div class="col-md-12 px-lg-5">
-                    <!--Card-->
-                    <div class="pb-5 mx-md-3">
-
-                            <div class="container">
-
-                                <!--Grid row-->
-                                <div class="row pt-3">
-
-                                    <!--Grid column-->
-                                    <div class="col-md-12 col-xl-12">
-
-                                            <!--Grid row-->
-                                            <div class="row mt-3">
-                                                <p>Lima has a few world-renowned restaurants, and <a href="http://en.astridygaston.com/" target="new">Astrid &amp; Gastón</a> is one of them. In fact, it is number 33 on the World's 50 Best Restaurants list in 2017, behind Central and Maido, who were 6th and 7th, respectively (both of which I would really love to try some day!). Of course, one of the main reasons that I love to travel is for the food, and I do not have much experience with Peruvian or any kind of South American cuisine, so of course I wanted to try one of these 50 best restaurants while I was down there. We made a reservation to go here for lunch, although it wasn't too busy when we visited. The whole meal took almost 3 hours, with 11 main dishes and 3 desserts. Instead of going with the tasting menu, we had the waiter choose some dishes for us, which was quite similar to the tasting menu, with a couple different dishes, and ended up being slightly cheaper. If I remember correctly, after tipping, the meal came out to be around 100 USD per person.</p>
+                <p>Lima has a few world-renowned restaurants, and <a href="http://en.astridygaston.com/" target="new">Astrid &amp; Gastón</a> is one of them. In fact, it is number 33 on the World's 50 Best Restaurants list in 2017, behind Central and Maido, who were 6th and 7th, respectively (both of which I would really love to try some day!). Of course, one of the main reasons that I love to travel is for the food, and I do not have much experience with Peruvian or any kind of South American cuisine, so of course I wanted to try one of these 50 best restaurants while I was down there. We made a reservation to go here for lunch, although it wasn't too busy when we visited. The whole meal took almost 3 hours, with 11 main dishes and 3 desserts. Instead of going with the tasting menu, we had the waiter choose some dishes for us, which was quite similar to the tasting menu, with a couple different dishes, and ended up being slightly cheaper. If I remember correctly, after tipping, the meal came out to be around 100 USD per person.</p>
 <p>The menu had a nice selection, and individual dishes are decently priced for people who don't want to do a tasting menu.</p>
 <div class="row row-no-margin justify-content-center mb-3">
     <div class="col-md-4 no-padding">
@@ -256,47 +205,10 @@ cinammon ice cream">
 </div>
 
 <p>This was my first experience at a really nice, highly-rated restaurant, trying a sort-of tasting menu, and it was definitely an experience! I hope to continue to do this again, although it definitely is rough on the wallet.</p>
-                                            </div>
-                                            <!--Grid row-->
-                                    </div>
-                                    <!--/Grid column-->
 
-                                </div>
-                                <!--/Grid row-->
-
-                        </div>
-                        <!--Grid row-->
-
-
-                        <!--<div class="row">
-                            <div id="disqus_thread"></div>
-                                <script>
-                                /*
-                                var disqus_config = function () {
-
-                                    this.page.url = ;  // blog.juliazhang.com/ + post.path
-                                    this.page.identifier = PAGE_IDENTIFIER; // post.path
-                                    this.page.title = ; // post.title
-                                };
-
-                                (function() { // DON'T EDIT BELOW THIS LINE
-                                var d = document, s = d.createElement('script');
-                                s.src = 'https://juliazhang.disqus.com/embed.js';
-                                s.setAttribute('data-timestamp', +new Date());
-                                (d.head || d.body).appendChild(s);
-                                })();
-                                */
-                                </script>
-                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                        </div>-->
-
-                    </div>
-                    <!--/Card-->
-                </div>
-                <!--/Grid column-->
             </div>
-            <!--/Grid row-->
         </div>
+
     </main>
     <!--Main Layout-->
 
@@ -305,7 +217,7 @@ cinammon ice cream">
 
 
     <!--Footer-->
-    <footer class="page-footer stylish-color-dark mt-5">
+    <footer class="page-footer mt-5">
 
     <!--Footer Links-->
     <div class="container">
@@ -313,11 +225,11 @@ cinammon ice cream">
         <!-- Footer links -->
         <div class="row justify-content-center mt-3 pb-3">
 
-            <div class="text-center" style="margin-bottom:10px;">
-                <a href="http://juliazhang.com" target="new"><i class="fa fa-globe" style="margin-right:5px;"></i></a>
-                <a href="https://www.instagram.com/jzjourneys/" target="new"><i class="fa fa-instagram" style="margin-right:5px"></i></a>
-                <a href="https://www.flickr.com/photos/157459585@N03/" target="new"><i class="fa fa-flickr" style="margin-right:5px"></i></a>
-                <a href="https://500px.com/juliazhang95" target="new"><i class="fa fa-500px" style="margin-right:5px"></i></a>
+            <div class="text-center">
+                <a href="http://juliazhang.com" target="new" class="dark-grey-text"><i class="fa fa-globe" style="margin-right:5px;"></i></a>
+                <a href="https://www.instagram.com/jzjourneys/" target="new" class="dark-grey-text"><i class="fa fa-instagram" style="margin-right:5px"></i></a>
+                <a href="https://www.flickr.com/photos/157459585@N03/" target="new" class="dark-grey-text"><i class="fa fa-flickr" style="margin-right:5px"></i></a>
+                <a href="https://500px.com/juliazhang95" target="new" class="dark-grey-text"><i class="fa fa-500px" style="margin-right:5px"></i></a>
 
                 <br/>
                 <i class="fa fa-heart"></i> Julia.
@@ -343,11 +255,16 @@ cinammon ice cream">
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="/static/js/mdb.min.js"></script>
-
     <!-- Lightbox -->
     <script type="text/javascript" src="/static/js/lightbox.js"></script>
+
+    
+
+    <script>
+        $('nav').toggleClass('nav-fixed', 'onload')
+    </script>
+
+
 
     <script type="text/javascript">
         /* WOW.js init */
