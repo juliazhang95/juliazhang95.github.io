@@ -40,9 +40,22 @@ nav a:last-of-type {
     padding-right: 0;
 }
 
+nav .links-small {
+    display: none;
+    text-align: center!important;
+}
+
 @media screen and (max-width: 768px) {
-    nav .title, nav .links {
+    nav .title {
         text-align: center!important;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    nav .links-small {
+        display: block;
     }
 }
 
