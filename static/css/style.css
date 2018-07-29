@@ -187,7 +187,7 @@ p {
     flex:1.3333;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .flex-landscape, .flex-2-landscape, .flex-portrait, .flex-column3,
     .flex-portrait-iphone, .flex-landscape-iphone {
         flex: 100%;
