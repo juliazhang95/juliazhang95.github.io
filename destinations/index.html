@@ -92,6 +92,58 @@
         <div class="row">
             
                 <div class="col-md-4 mb-4 ml-auto mr-auto pl-2 pr-2">
+                <h3>Europe</h3>
+                <ul>
+                
+                <li>
+                    <strong><a href="/posts/country/Portugal/">Portugal</a>:</strong>
+                    
+                    <a href="/posts/country/Portugal/city/Faro/">Faro</a>, 
+                    
+                    <a href="/posts/country/Portugal/city/Lagos/">Lagos</a>, 
+                    
+                    <a href="/posts/country/Portugal/city/Porto/">Porto</a>, 
+                    
+                    <a href="/posts/country/Portugal/city/Lisbon/">Lisbon</a>, 
+                    
+                    <a href="/posts/country/Portugal/city/Sintra/">Sintra</a>
+                    
+                </li>
+                
+                <li>
+                    <strong><a href="/posts/country/Spain/">Spain</a>:</strong>
+                    
+                    <a href="/posts/country/Spain/city/Seville/">Seville</a>, 
+                    
+                    <a href="/posts/country/Spain/city/Granada/">Granada</a>
+                    
+                </li>
+                
+                <li>
+                    <strong><a href="/posts/country/Italy/">Italy</a>:</strong>
+                    
+                    <a href="/posts/country/Italy/city/Sorrento/">Sorrento</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Amalfi/">Amalfi</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Pompeii/">Pompeii</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Naples/">Naples</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Florence/">Florence</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Pisa/">Pisa</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Milan/">Milan</a>, 
+                    
+                    <a href="/posts/country/Italy/city/Cinque%20Terre/">Cinque Terre</a>
+                    
+                </li>
+                
+                </ul>
+                </div>
+            
+                <div class="col-md-4 mb-4 ml-auto mr-auto pl-2 pr-2">
                 <h3>South America</h3>
                 <ul>
                 
@@ -109,75 +161,6 @@
                     <a href="/posts/country/Peru/city/Cusco/">Cusco</a>, 
                     
                     <a href="/posts/country/Peru/city/Ollantaytambo/">Ollantaytambo</a>
-                    
-                </li>
-                
-                </ul>
-                </div>
-            
-                <div class="col-md-4 mb-4 ml-auto mr-auto pl-2 pr-2">
-                <h3>Europe</h3>
-                <ul>
-                
-                <li>
-                    <strong><a href="/posts/country/Spain/">Spain</a>:</strong>
-                    
-                    <a href="/posts/country/Spain/city/Seville/">Seville</a>, 
-                    
-                    <a href="/posts/country/Spain/city/Granada/">Granada</a>
-                    
-                </li>
-                
-                <li>
-                    <strong><a href="/posts/country/Italy/">Italy</a>:</strong>
-                    
-                    <a href="/posts/country/Italy/city/Milan/">Milan</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Cinque%20Terre/">Cinque Terre</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Florence/">Florence</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Pisa/">Pisa</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Syracuse/">Syracuse</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Avola/">Avola</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Catania/">Catania</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Sorrento/">Sorrento</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Amalfi/">Amalfi</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Pompeii/">Pompeii</a>, 
-                    
-                    <a href="/posts/country/Italy/city/Naples/">Naples</a>
-                    
-                </li>
-                
-                <li>
-                    <strong><a href="/posts/country/Portugal/">Portugal</a>:</strong>
-                    
-                    <a href="/posts/country/Portugal/city/Porto/">Porto</a>, 
-                    
-                    <a href="/posts/country/Portugal/city/Faro/">Faro</a>, 
-                    
-                    <a href="/posts/country/Portugal/city/Lagos/">Lagos</a>, 
-                    
-                    <a href="/posts/country/Portugal/city/Lisbon/">Lisbon</a>, 
-                    
-                    <a href="/posts/country/Portugal/city/Sintra/">Sintra</a>
-                    
-                </li>
-                
-                <li>
-                    <strong><a href="/posts/country/Greece/">Greece</a>:</strong>
-                    
-                    <a href="/posts/country/Greece/city/Chania/">Chania</a>, 
-                    
-                    <a href="/posts/country/Greece/city/Heraklion/">Heraklion</a>, 
-                    
-                    <a href="/posts/country/Greece/city/Crete/">Crete</a>
                     
                 </li>
                 
@@ -222,7 +205,7 @@
                 return ['<div class="hoverinfo" style="cursor:pointer;">',geo.properties.name, '</div>'].join('');
             },
         },
-        data: {"ESP": {"fillKey": "beenTo", "tag": "Spain"}, "GRC": {"fillKey": "beenTo", "tag": "Greece"}, "ITA": {"fillKey": "beenTo", "tag": "Italy"}, "PER": {"fillKey": "beenTo", "tag": "Peru"}, "PRT": {"fillKey": "beenTo", "tag": "Portugal"}},
+        data: {"ESP": {"fillKey": "beenTo", "tag": "Spain"}, "ITA": {"fillKey": "beenTo", "tag": "Italy"}, "PER": {"fillKey": "beenTo", "tag": "Peru"}, "PRT": {"fillKey": "beenTo", "tag": "Portugal"}},
         done: function(datamap) {
            // datamap.svg.call(d3.behavior.zoom().on("zoom", redraw));
            // nice zoom example https://bl.ocks.org/mbostock/9656675
@@ -308,7 +291,6 @@
         <div class="row justify-content-center mt-3 pb-3">
 
             <div class="text-center">
-                <!--
                 <a href="/index.html" class="dark-grey-text"><i class="fa fa-home mr-1"></i></a>
                 <a href="http://juliazhang.com" target="new" class="dark-grey-text"><i class="fa fa-globe mr-1"></i></a>
                 <a href="https://www.instagram.com/jzjourneys/" target="new" class="dark-grey-text"><i class="fab fa-instagram mr-1"></i></a>
@@ -316,8 +298,7 @@
                 <a href="https://500px.com/juliazhang95" target="new" class="dark-grey-text"><i class="fab fa-500px mr-1"></i></a>
 
                 <br/>
-                -->
-                <a href="http://juliazhang.com" target="new" class="dark-grey-text"><i class="fa fa-heart"></i> Julia.</a>
+                <i class="fa fa-heart"></i> Julia.
             </div>
 
 
